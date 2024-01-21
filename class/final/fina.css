@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+body{
+    display: flex;
+    /* flex-direction: row; */
+    /* row로 하나 column으로 하나 결과는 동일 */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+.wrapper{
+    /* background-color: bisque; */
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 950px;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px;
+    /* position: absolute; */
+    /* left: 450px; */
+    /* top: 100px; */
+}
+
+.wrapper__content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title{
+    width: 100%;
+    height: 47px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0068ff;
+    margin-top: 20px;
+}
+
+#email{
+    width: 100%;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+#name{
+    width: 100%;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#pw1{
+    width: 100%;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#pw2{
+    width: 100%;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.phone{
+    width: 100%;
+    margin-top: 15px;
+    /* height: 40px; */
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone input{
+    width: 100px;
+    height: 40px;
+}
+
+
+.tokenContent{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40px;
+}
+
+.tokenNumber{
+    width: 60px;
+    /* height: 27px; */
+    color: #0068FF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#tokenButton{
+    /* background-color: white; */
+    width: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    /* color : #0068FF; */
+    border: 1px solid #0068FF;
+    border-radius: 5px;
+    height: 35px;
+}
+
+
+.tokenDo{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+}
+
+.timer{
+    width: 60px;
+    /* height: 27px; */
+    color: #0068FF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#tokenConfirm{
+    /* color: white; */
+    width: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    /* background-color : #0068FF; */
+    border: 1px solid #0068FF;
+    border-radius: 5px;
+    height: 35px;
+}
+
+
+#region{
+    width: 100%;
+    height: 60px;
+    color: gray;
+    /* font-weight: 700; */
+    background-color: #FFF;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #d2d2d2;
+}
+
+
+.radioes{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.radio__female{
+    margin-right: 20px;
+}
+
+#radioFemale{
+    margin-right: 5px;
+    background-color: gray;
+    width: 30px;
+}
+#radioMale{
+    margin-right: 5px;
+}
+
+.divideLine{
+    margin-top: 35px;
+    border-top: 1px dashed gray;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#submitButton{
+    margin-top: 10px;
+    width: 100%;
+    /* background-color: white; */
+    /* color: #0068FF; */
+    height: 60px;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.errorMsg{
+    color: red;
+    font-size: 11px;
+    margin-top: -3px;
+    height: 10px;
+}

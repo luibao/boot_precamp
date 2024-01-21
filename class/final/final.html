@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/class/final/fina.css">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <div class="title">코드캠프 회원가입</div>
+            <input type="text" id="email" placeholder="이메일을 입력해 주세요.">
+            <div class="errorMsg" id="emailError"></div>
+            <input type="text" id="name" placeholder="이름을 입력해주세요.">
+            <div class="errorMsg" id="nameError"></div>
+            <input type="password" id="pw1" placeholder="비밀번호를 입력해 주세요.">
+            <div class="errorMsg"  id="pw1Error"></div>
+            <input type="password" id="pw2" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div class="errorMsg" id="pw2Error"></div>
+            <div class="phone">
+                <input type="text" id="p1" maxlength="3" oninput="p2Focus()"> -
+                <input type="text" id="p2" maxlength="4" oninput="p3Focus()"> -
+                <input type="text" id="p3" maxlength="4" oninput="tokenFocus()">            
+            </div>
+            <div class="tokenContent">
+                <span class="tokenNumber" id="showNumber">000000</span>
+                <button id="tokenButton" disabled="disabled" onclick="tokenFunction()">인증번호 전송</button>
+            </div>
+            <div class="tokenDo">
+                <span class="timer" id="timeShow">3:00</span>
+                <button id="tokenConfirm" disabled="disabled" onclick="confirmToken()">인증 확인</button>
+            </div>
+            <select name="regionselect" id="region" >
+                <option disabled="true" value="0" selected>지역을 선택하세요</option>
+                <option value="1">서울</option>
+                <option value="2">경기</option>
+                <option value="3">인천</option>
+            </select>
+            <div class="errorMsg" id="regionError"></div>
+            <div class="radioes">
+                <div class="radio__female">
+                <input type="radio" name="gender" id="radioFemale">여성
+                </div>
+                <div class="radio__male">
+                <input type="radio" name="gender" id="radioMale">남성
+                </div>
+            </div>
+            <div class="errorMsg" id="radioError"></div>
+            <div class="divideLine"></div>
+
+            <button id="submitButton" disabled="disabled" onclick="submitClick()">가입하기</button>
+      
+            
+        </div>
+    </div>
+  
+</body>
+</html>

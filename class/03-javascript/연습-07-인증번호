@@ -1,0 +1,42 @@
+Math.floor(Math.random()*1000000)
+// 949697
+String(Math.floor(Math.random()*1000000))
+// '121618'
+String(Math.floor(Math.random()*1000000))
+// '633321'
+String(Math.floor(Math.random()*1000000))
+// '18928'
+String(Math.floor(Math.random()*1000000))
+// '69329'
+String(Math.floor(Math.random()*1000000))
+// '673382'
+
+
+//padStart(매개변수, 대체할문자열)
+//6자리가 안되면 "0"으로 채워라
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '937445'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '606260'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '303821'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '090058'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '580538'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '162323'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '004589'
+String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// '905805'
+let result =String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+// undefined
+result
+// '928530'
+result
+// '928530'
+result
+// '928530'
+
+//result가 계속 같은결과가 나오는 문제
